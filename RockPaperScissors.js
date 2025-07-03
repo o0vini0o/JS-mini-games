@@ -11,6 +11,7 @@ const userChoice = process.argv.slice(2).shift().toLowerCase();
 if (!gamePool.includes(userChoice)) {
   console.log("Please enter one of rock, paper or scissor.");
 } else {
+  // Prepare the output context.
   const outputStandard = `You chose ${userChoice}. Computer chose ${computerChoice}. `;
   const youWin = "You win!";
   const youLose = "You lose!";
@@ -31,7 +32,6 @@ if (!gamePool.includes(userChoice)) {
           : outputStandard + youLose
       );
       break;
-    // case 2:
     default:
       // In the case of rock and scissors, rock wins.
       console.log(
