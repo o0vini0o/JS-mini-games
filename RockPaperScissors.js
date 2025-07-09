@@ -12,10 +12,10 @@ if (!gamePool.includes(userChoice)) {
   console.log("Please enter one of rock, paper or scissor.");
 } else {
   // Prepare the output context.
-  const outputStandard = `You chose ${userChoice}. Computer chose ${computerChoice}. `;
+  const outputStandard = `You chose ${userChoice}. Computer chose ${computerChoice}.`;
   const youWin = "You win!";
   const youLose = "You lose!";
-  const draw = "A draw!";
+  const draw = "It's a draw!";
   // find the index of userChoice in gamePool
   const userChoiceIndex = gamePool.findIndex((choice) => choice === userChoice);
 
